@@ -1,7 +1,7 @@
 # TikTok Refugees Related Posts Data Dashboard
 
 ## Overview
-This Streamlit-based dashboard provides interactive visualizations for analyzing RedNote posts related to "TikTok Refugees." It allows users to explore trends, category distributions, and geographic insights based on uploaded data.
+This Streamlit-based dashboard provides interactive visualizations for analyzing posts related to "TikTok Refugees." It allows users to explore trends, category distributions, and geographic insights based on uploaded data.
 
 ## Features
 - **Data Upload**: Users can upload a CSV file for analysis.
@@ -22,17 +22,32 @@ To launch the dashboard, run:
 streamlit run app.py
 ```
 
+## Online Demo
+You can access the online version of this dashboard here:  
+🔗 **[TikTok Refugees Data Dashboard](https://zoeyfeng0110-tiktok-refugee-related-data-visua-dashboard-cbi2me.streamlit.app/)**  
+After opening the link in your browser, you can use the `examplecsv` file from this repository to display data.
+
+## Data Management (15 points)
+- **All source data included or properly linked via URL (5 points)**  
+  The dataset consists of all posts retrieved from Rednote using the keyword **"TikTok refugee"** between **January 2, 2025, and February 19, 2025**.
+  
+- **Data cleaning process thoroughly documented (5 points)**  
+  The categorization of posts was performed using a locally deployed **Llama 3.2-8B** model.
+  
+- **Sampling methodology explained (if applicable) (5 points)**  
+  *(To be completed if a sampling method is applied to the dataset.)*
+
 ## Data Requirements
 The uploaded CSV file should contain the following columns:
 - `time`: Timestamp in milliseconds
 - `title`: Post title
-- `desc`: Post Content
+- `desc`: Post description
 - `category`: Post category (mapped to readable names)
-- `ip_location`: Geographic location of Chinese Province (province-level data)
+- `ip_location`: Geographic location (province-level data)
 
 ## Data Coverage
-- Time Range: The dataset covers posts from a specific time period, depending on the uploaded data. The example data is covered from 2025.1.2 to 2025.2.19
-- Total Posts: The total number of posts available in the dataset will be displayed in the dashboard after uploading the file.
+- **Time Range**: The dataset covers posts from **January 2, 2025, to February 19, 2025**.
+- **Total Posts**: The total number of posts available in the dataset will be displayed in the dashboard after uploading the file.
 
 ## Usage Guide
 1. Upload your CSV file via the sidebar.
