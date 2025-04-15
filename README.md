@@ -27,15 +27,10 @@ You can access the online version of this dashboard here:
 🔗 **[TikTok Refugees Data Dashboard](https://zoeyfeng0110-tiktok-refugee-related-data-visua-dashboard-cbi2me.streamlit.app/)**  
 After opening the link in your browser, you can use the `examplecsv` file from this repository to display data.
 
-## Data Management (15 points)
-- **All source data included or properly linked via URL (5 points)**  
-  The dataset consists of all posts retrieved from Rednote using the keyword **"TikTok refugee"** between **January 2, 2025, and February 19, 2025**.
+## Data Management 
+- The dataset consists of all posts retrieved from Rednote using the keyword **"TikTok refugee"** between **January 2, 2025, and February 19, 2025**.
   
-- **Data cleaning process thoroughly documented (5 points)**  
-  The categorization of posts was performed using a locally deployed **Llama 3.2-8B** model.
-  
-- **Sampling methodology explained (if applicable) (5 points)**  
-  *(To be completed if a sampling method is applied to the dataset.)*
+- The categorization of posts was performed using a locally deployed **Llama 3.2-8B** model.
 
 ## Data Requirements
 The uploaded CSV file should contain the following columns:
